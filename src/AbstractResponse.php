@@ -123,7 +123,7 @@ abstract class AbstractResponse implements Response
      * @param mixed $data
      * @param callable|\League\Fractal\TransformerAbstract $transformer
      * @param string $resourceKey
-     * @param Cursor $cursor
+     * @param ?Cursor $cursor
      * @param array $meta
      * @param array $headers
      * @return mixed
@@ -132,7 +132,7 @@ abstract class AbstractResponse implements Response
         $data,
         $transformer,
         $resourceKey = null,
-        Cursor $cursor = null,
+        ?Cursor $cursor = null,
         $meta = [],
         array $headers = []
     ) {

@@ -59,7 +59,7 @@ interface Response
      * @param array $headers
      * @return mixed
      */
-    public function withItem($data, $transformer, string $resourceKey = null, array $meta = [], array $headers = []);
+    public function withItem($data, $transformer, ?string $resourceKey = null, array $meta = [], array $headers = []);
 
     /**
      * Response for collection of items
@@ -75,8 +75,8 @@ interface Response
     public function withCollection(
         $data,
         $transformer,
-        string $resourceKey = null,
-        Cursor $cursor = null,
+        ?string $resourceKey = null,
+        ?Cursor $cursor = null,
         array $meta = [],
         array $headers = []
     );
